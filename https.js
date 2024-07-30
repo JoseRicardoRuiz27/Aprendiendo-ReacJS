@@ -7,7 +7,7 @@ const server = http.createServer((request, response) => {
 })
 
 puertoDisponible(3001).then(port =>{
-    server.listen(3001, () =>{
+    server.listen(port, () =>{
     console.log(`El servido esta en el puerto http://localhost:${port}`)
 })
 })
